@@ -1,0 +1,39 @@
+.progekt {
+    padding-bottom: 95px;
+}
+
+.title-list {
+    display: flex;
+}
+
+.progekt-item {
+    margin-right: 30px;
+    position: relative;
+    .title-list,
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.progekt-text-box {
+    position: absolute;
+    top: 225px;
+    width: 370px;
+}
+
+.progekt-text {
+    @include font (14px, 700, 1.14, 0.03em);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.progekt-title {
+    @include font (36px, 700, 1.16, 0.03em);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--title-color);
+}

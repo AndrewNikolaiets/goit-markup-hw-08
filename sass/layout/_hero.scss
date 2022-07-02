@@ -1,0 +1,41 @@
+.hero {
+    background-color: #212121;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-title {
+    @include font (44px, 900, 1.36, 0.06em);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 626px;
+    margin: auto;
+}
+
+.hero-btn {
+    @include font (16px, 700, 1.88, 0.06em);
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 30px;
+}
