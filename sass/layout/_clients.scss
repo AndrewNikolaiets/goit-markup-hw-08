@@ -4,13 +4,16 @@
 }
 
 .clients-title {
+    // @include font (36px, 700, 1.17, 0.03em);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-color);
+    @include tablet {
+        @include font (28px, null, 1.18, null);
+        }    
+        @include desktop {
+        @include font (36px, 700, 1.17, 0.03em);
+        }
 }
 
 .client {
@@ -23,6 +26,12 @@
     width: 170px;
     height: 92px;
     margin: 0 auto;
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+        }   
+        @include desktop {
+        width: calc((100% - 150px) / 6);
+        }
 }
 
 .client__link {

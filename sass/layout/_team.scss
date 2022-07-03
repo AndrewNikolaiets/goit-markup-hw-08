@@ -2,16 +2,36 @@
     padding-top: 95px;
     padding-bottom: 95px;
     background: #f5f4fa;
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: #f5f4fa;
+        }
+   @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: #f5f4fa;
+        }
 }
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center
 }
 
 .team-item {
-    margin-right: 30px;
+    width: 100%;
+    // margin-right: 30px;
     .team-list &:last-child {
-            margin-right: 0;
+        margin-right: 0;
+        }
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+        }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
         }
 }
 
@@ -24,10 +44,16 @@
 }
 
 .team-title {
-    @include font (36px, 700, 1.16, 0.03em);
+    // @include font (36px, 700, 1.16, 0.03em);
     margin-bottom: 50px;
     text-align: center;
     color: var(--title-color);
+    @media screen and (min-width: 768px) {
+        @include font (28px, null, 1.18, null);
+        }
+    @media screen and (min-width: 1200px) {
+        @include font (36px, 700, 1.16, 0.03em);
+        }
 }
 
 .team-group {

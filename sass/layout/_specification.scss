@@ -1,20 +1,35 @@
 .specification {
     padding-top: 94px;
     padding-bottom: 94px;
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
 }
 
 .specific {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;   
 }
 
 .specific__item {
-    margin-right: 30px;
+    width: 100%;
+    // margin-right: 30px;
     .specific,
     &:last-child {
-            margin-right: 10px;
-        }
+        margin-right: 0px;
+    }
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .specific__item-icon {
