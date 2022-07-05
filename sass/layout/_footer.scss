@@ -3,12 +3,23 @@
     padding-bottom: 60px;
     display: block;
     background-color: #212121;
+    text-align: center;
+    @include desktop {
+    text-align: justify;
+    }
 }
 
 .footer-cont {
+    @include tablet {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around
+    }
+    @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+    }
 }
 
 .footer-contacts {
@@ -20,28 +31,37 @@
 
 .footer-logo {
     font-family: "Raleway";
-    @include font (26px, 700, 1.19, 0.03em);
     color: #2196f3;
+    @include font (24px, 700, 1.17, 0.03em);
+    @include desktop {
+    @include font (26px, 700, 1.19, 0.03em);
+    }
 }
 
 .logo-footer {
     color: #ffffff;
 }
 
-.footer-contacts-logo {
-    margin-right: 70px;
+.footer-contacts-logo {    
+      padding-bottom: 60px;
+    @include tablet {
+    width: 232px;
+    }
+    @include desktop {
+       margin-right: 70px;
+    }
 }
 
 .footer-address {
     @include font (14px, 400, 1.71, 0.03em);
-    color: #ffffff;
+      color: #ffffff;
+    @include desktop {
+        width: 230px;
+    }
 }
 
 .footer-mail {
-
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (14px, 400, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
     transition: color var(--transition);
@@ -52,9 +72,7 @@
 }
 
 .footer-tel {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (14px, 400, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
     transition: color var(--transition);
@@ -65,12 +83,20 @@
 }
 
 .footer-soc {
-    width: 206px;
+    width: 100%;
     height: 80px;
-    padding-bottom: 100px;
+    margin-bottom: 60px;
     &:not(:last-child) {
             margin-right: 70px;
-        }
+       }
+    @include tablet {
+    width: 206px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    }
+    @include desktop { 
+    width: 206px;
+    }
 }
 
 .footer-soc-text {
@@ -82,7 +108,12 @@
 
 .footer-soc-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    @include desktop {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
 }
 
 .footer-soc-item {
@@ -110,13 +141,21 @@
 }
 
 .footer-email {
-    width: 570px;
+    width: 100%;
+    padding-top: 10px;
+    @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+    }
+    @include desktop {
     height: 86px;
-    padding-bottom: 100px;
+    justify-content: flex-start;
+    }
 }
 
 .footer-imput {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: var(--title-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -125,11 +164,23 @@
     margin-right: 12px;
     color: var(--primary-white-color);
     padding: 15px 16px;
+    margin-bottom: 20px;
+    @include tablet {
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    @include desktop {
+        width: 360px;
+        margin-right: 20px;
+        margin-left: 0;
+        
+    }
 }
 
 .footer-email-btn {
     @include font (16px, 700, 1.88, 0.06em);
     min-width: 200px;
+    height: 50px;
     color: var(--primary-white-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -147,6 +198,11 @@
 
 .email-btn {
     display: flex;
+    flex-wrap: wrap;
+    @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    }
 }
 
 .icon-send {

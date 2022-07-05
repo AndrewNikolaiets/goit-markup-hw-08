@@ -5,12 +5,19 @@
 
 .filters-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+    @include tablet {
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
 }
 
 .filt-btn-list {
     margin-right: 8px;
+    margin-top: 15px;
 }
 
 .filters-btn {
@@ -19,6 +26,7 @@
     border-radius: 4px;
     font-style: normal;
     text-align: center;
+    border: none;
     color: var(--title-color);
     padding-top: 6px;
     padding-bottom: 6px;
