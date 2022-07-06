@@ -28,7 +28,7 @@
 }
 
 .header-list {
-    display: flex;
+    display: none;
     margin-left: 90px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .header-contact {
-    display: flex;
+    display: none;
     margin-left: auto;
 }
 
@@ -98,4 +98,22 @@
 .header-contact-tel {
     margin-right: 5px;
     fill: currentColor;
+}
+
+.heder-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    border: none;
+    padding-top: 10px;
+    background-color: transparent;
+    fill: #212121;
+    cursor: pointer;
+    transition: color var(--transition);
+    // transition-duration: var(--transition-duration);
+    // transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+        }
 }

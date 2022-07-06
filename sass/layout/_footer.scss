@@ -5,7 +5,9 @@
     background-color: #212121;
     text-align: center;
     @include desktop {
+    height: 252px;
     text-align: justify;
+    // width: 1600px;
     }
 }
 
