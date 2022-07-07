@@ -110,8 +110,6 @@
     fill: #212121;
     cursor: pointer;
     transition: color var(--transition);
-    // transition-duration: var(--transition-duration);
-    // transition-timing-function: var(--timing-function);
     &:hover,
     &:focus {
     fill: var(--accent-color);

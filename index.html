@@ -68,17 +68,8 @@
             >
           </li>
         </ul>
-        <button
-          type="button"
-          class="heder-menu-btn js-open-menu"
-          data-modal-open
-        >
-          <svg
-            class="heder-menu-icon"
-            height="40"
-            width="40"
-            aria-label="переключатель меню"
-          >
+        <button type="button" class="heder-menu-btn" mob-modal-open>
+          <svg class="heder-menu-icon" height="40" width="40">
             <use
               class="heder-menu-icon"
               href="./images/symbol-defs.svg#icon-menu_heder"
@@ -87,53 +78,6 @@
         </button>
       </div>
     </header>
-    <!-- HEDER-MENU -->
-    <div class="backdrop-mob is-hidden" data-modal>
-      <div class="mob-modal">
-        <button type="button" class="modal-cloce-btn" data-modal-close>
-          <svg class="modal-cloce" width="" height="">
-            <use href="./images/symbol-defs.svg#icon-close-buttom"></use>
-          </svg>
-        </button>
-        <div class="mob-nav">
-          <ul class="mob-nav__list list">
-            <li class="mob-nav__item">
-              <a href="./index.html" class="mob-nav__link current link"
-                >Студия</a
-              >
-            </li>
-            <li class="mob-nav__item">
-              <a href="./portfolio.html" class="mob-nav__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="mob-nav__item">
-              <a href="" class="mob-nav__link link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="mob-contacts">
-          <ul class="mob-cont-list list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="mob-cont-mail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="mob-cont-tel link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-soc-list list">
-            <li><a href="" class="mob-soc-link">Instagram</a></li>
-            <li><a href="" class="mob-soc-link link">Twitter</a></li>
-            <li><a href="" class="mob-soc-link link">Facebook</a></li>
-            <li><a href="" class="mob-soc-link link">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -644,6 +588,49 @@
             <button type="submit" class="modal-btn">Отправить</button>
           </div>
         </form>
+      </div>
+    </div>
+    <!-- Modal mobile -->
+    <div class="backdrop-mob is-hidden" mob-modal>
+      <div class="mob-modal">
+        <button type="button" class="mob-cloce-btn" mob-modal-close>
+          <svg class="modal-cloce" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav-list list">
+          <li class="mob-nav-item">
+            <a href="./index.html" class="mob-nav-link current link">Студия</a>
+          </li>
+          <li class="mob-nav-item">
+            <a href="./portfolio.html" class="mob-nav-link link">Портфолио</a>
+          </li>
+          <li class="mob-nav-item">
+            <a href="" class="mob-nav-link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mob-cont">
+          <ul class="mob-cont-list list">
+            <li class="mob-cont-item">
+              <a href="mailto:info@devstudio.com" class="mob-cont-mail link">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-cont-item">
+              <a href="tel:+380961111111" class="mob-cont-tel link">
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-soc">
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-iten item"><a href=""></a>Instagram</li>
+            <li class="mob-soc-iten item"><a href=""></a>Twitter</li>
+            <li class="mob-soc-iten item"><a href=""></a>Facebook</li>
+            <li class="mob-soc-iten item"><a href=""></a>LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
