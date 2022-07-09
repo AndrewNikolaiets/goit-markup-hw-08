@@ -30,6 +30,10 @@
 .header-list {
     display: none;
     margin-left: 90px;
+    @include tablet {
+    display: flex;   
+    margin-right: 40px;
+    }
 }
 
 .header-item {
@@ -42,6 +46,11 @@
 .header-contact {
     display: none;
     margin-left: auto;
+    @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    }
 }
 
 .header-link {
@@ -114,4 +123,7 @@
     &:focus {
     fill: var(--accent-color);
         }
+    @include tablet {
+        display: none;
+    }
 }

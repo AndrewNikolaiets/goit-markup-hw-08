@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
+    openModalBtn: document.querySelector("[mob-modal-open]"),
+    closeModalBtn: document.querySelector("[mob-modal-close]"),
+      modal: document.querySelector("[mob-modal]"),
     body: document.querySelector("[body]"),
   };
 
@@ -14,6 +14,3 @@
       refs.body.classList.toggle("no-scroll");
   }
 })();
-
-
-

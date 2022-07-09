@@ -35,6 +35,10 @@ right: 15px;
     }
 }
 
+.mob-nav-list {
+    text-align: initial;
+}
+
 .mob-nav-item {
     padding-bottom: 32px;
 }
@@ -49,9 +53,11 @@ right: 15px;
 }
 
 .mob-cont-list {
-   position: absolute;
-   left: 50px;
-   bottom: 134px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50px;
+    bottom: 134px;
 }
 
 .mob-cont-item {
