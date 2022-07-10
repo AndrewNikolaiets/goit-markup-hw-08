@@ -10,7 +10,7 @@
 
 .modal {
     // width: 528px;
-    width: 100%;
+    width: 450px;
     min-height: 581px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -25,6 +25,9 @@
     .backdrop.is-hidden & {
             transform: translate(0) scale(0);
         }
+    @include tablet {
+        width: 450px;
+    }
 }
 
 .is-hidden {
@@ -61,6 +64,7 @@
 }
 
 .modal-field {
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -144,7 +148,8 @@
 }
 
 .check-text-link {
-    @include font (14px, 400, 1.71, 0.03em);
+    // @include font (14px, 400, 1.71, 0.03em);
+    @include font (12px, 400, 1.17, 0.03em);
     text-decoration-line: underline;
     color: #2196f3;
     padding-left: 5px;
