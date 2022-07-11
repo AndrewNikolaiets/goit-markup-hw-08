@@ -281,10 +281,15 @@ img {
   position: fixed;
   top: 0px;
 }
+@media screen and (min-width: 768px) {
+  .backdrop-mob {
+    display: none;
+  }
+}
 
 .mob-modal {
-  width: 480px;
-  height: 796px;
+  width: 100%;
+  height: 100%;
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   top: 0%;
@@ -328,9 +333,14 @@ img {
   color: var(--accent-color);
 }
 
+.mob-cont {
+  width: 100%;
+}
+
 .mob-cont-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   position: absolute;
   left: 50px;
   bottom: 134px;
@@ -527,8 +537,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600;
   margin: 0 auto;
   text-align: center;
@@ -551,6 +561,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     padding-top: 200px;
   }
@@ -610,8 +622,8 @@ img {
 }
 
 .specification {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .specification {
@@ -621,8 +633,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .specification {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -666,8 +678,14 @@ img {
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-color);
+}
+@media screen and (min-width: 768px) {
+  .specific__title {
+    text-align: unset;
+  }
 }
 
 .specific__text {
@@ -738,8 +756,8 @@ img {
 }
 
 .team {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
 }
 @media screen and (min-width: 768px) {
@@ -751,8 +769,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 95px;
+    padding-bottom: 95px;
     background: #f5f4fa;
   }
 }
@@ -764,16 +782,8 @@ img {
   justify-content: center;
 }
 
-.team-item {
-  width: 100%;
-}
 .team-list .team-item:last-child {
   margin-right: 0;
-}
-@media screen and (min-width: 768px) {
-  .team-item {
-    width: calc((100% - 30px) / 2);
-  }
 }
 @media screen and (min-width: 1200px) {
   .team-item {
@@ -782,10 +792,20 @@ img {
 }
 
 .team-card {
-  width: 270px;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-title {
@@ -894,8 +914,7 @@ img {
 }
 
 .client__item {
-  width: 170px;
-  height: 92px;
+  width: calc((100% - 30px) / 2);
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -910,7 +929,7 @@ img {
 }
 
 .client__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -925,32 +944,49 @@ img {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+    height: 92px;
+  }
+}
 
 .client__soc-icon {
   fill: currentColor;
 }
 
 .filters {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 .filters-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filters-list {
     justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
   }
 }
 
 .filt-btn-list {
   margin-right: 8px;
-  margin-top: 15px;
 }
 
 .filters-btn {
@@ -990,6 +1026,7 @@ img {
 
 .works-item {
   margin-left: 30px;
+  width: 100%;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -1075,7 +1112,7 @@ img {
   .footer-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {

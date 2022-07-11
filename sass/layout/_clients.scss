@@ -22,19 +22,19 @@
 }
 
 .client__item {
-    width: 170px;
-    height: 92px;
+    width: calc((100% - 30px) / 2);
     margin: 0 auto;
     @include tablet {
         width: calc((100% - 60px) / 3);
         }   
         @include desktop {
         width: calc((100% - 150px) / 6);
+    
         }
 }
 
 .client__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -49,6 +49,10 @@
         &:focus {
                 color: var(--accent-color);
                 border-color: var(--accent-color);
+            }
+            @include desktop {
+            width: 170px;
+            height: 92px;
             }
 }
 

@@ -1,6 +1,6 @@
 .team {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #f5f4fa;
     @include tablet {
         padding-top: 60px;
@@ -8,8 +8,8 @@
         background: #f5f4fa;
         }
    @include desktop {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 95px;
+        padding-bottom: 95px;
         background: #f5f4fa;
         }
 }
@@ -22,25 +22,31 @@
 }
 
 .team-item {
-    width: 100%;
+    // width: 100%;
     // margin-right: 30px;
     .team-list &:last-child {
         margin-right: 0;
         }
-    @include tablet {
-        width: calc((100% - 30px) / 2);
-        }
+    // @include tablet {
+    //     width: calc((100% - 30px) / 2);
+    //     }
     @include desktop {
         width: calc((100% - 90px) / 4);
         }
 }
 
 .team-card {
-    width: 270px;
+    width: 100%;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    @include tablet {
+            width: calc((100% - 30px) / 2);
+        }
+    @include desktop {
+             width: calc((100% - 90px) / 4);
+        }
 }
 
 .team-title {
