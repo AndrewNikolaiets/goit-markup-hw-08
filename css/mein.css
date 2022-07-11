@@ -1019,6 +1019,11 @@ img {
   margin-left: -30px;
   margin-bottom: -30px;
 }
+@media screen and (min-width: 768px) {
+  .works-list {
+    justify-content: flex-start;
+  }
+}
 
 .work-card {
   padding: 20px 25px 20px 24px;

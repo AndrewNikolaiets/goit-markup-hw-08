@@ -4,6 +4,10 @@
     justify-content: center;
     margin-left: -30px;
     margin-bottom: -30px;
+    @include tablet {
+        justify-content: flex-start;
+    } 
+   
 }
 
 .work-card {
