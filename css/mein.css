@@ -111,6 +111,11 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
 .is-hidden {
   visibility: hidden;
@@ -340,6 +345,7 @@ img {
 .mob-cont-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   flex-direction: column;
   position: absolute;
   left: 50px;
@@ -351,19 +357,19 @@ img {
 }
 
 .mob-cont-mail {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
-.mob-cont-tel {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.mob-cont-tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 .mob-cont-tel:hover, .mob-cont-tel:focus {
   color: var(--accent-color);
@@ -809,7 +815,7 @@ img {
 }
 
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-color);
 }
@@ -817,6 +823,7 @@ img {
   .team-title {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -825,6 +832,7 @@ img {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -883,12 +891,24 @@ img {
 }
 
 .clients {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-color);
 }
@@ -896,6 +916,7 @@ img {
   .clients-title {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -904,6 +925,7 @@ img {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -929,7 +951,7 @@ img {
 }
 
 .client__link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

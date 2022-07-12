@@ -28,6 +28,9 @@
     @include tablet {
         width: 450px;
     }
+    @include desktop {
+        width: 528px;
+    }
 }
 
 .is-hidden {

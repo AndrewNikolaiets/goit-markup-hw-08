@@ -60,6 +60,7 @@ right: 15px;
 .mob-cont-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     flex-direction: column;
     position: absolute;
     left: 50px;
@@ -71,22 +72,22 @@ right: 15px;
 }
 
 .mob-cont-mail {
-    @include font (34px, 500, 1.18, 0.02em);
-    color: var(--accent-color);
+    @include font (24px, 500, 1.17, 0.02em);
+        color: var(--text-color);
 }
 
 .mob-cont-tel {
-    @include font (24px, 500, 1.17, 0.02em);
-    color: var(--text-color);
+    @include font (34px, 500, 1.18, 0.02em);
+        color: var(--accent-color);
     &:hover,
     &:focus {
         color: var(--accent-color);
         }
 }
 
-.mob-soc-list{
+.mob-soc-list {
     display: flex;
-    gap: 10px
+    gap: 10px;
 }
 
 .mob-soc-iten {

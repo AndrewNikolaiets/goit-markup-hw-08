@@ -50,14 +50,16 @@
 }
 
 .team-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     color: var(--title-color);
     @media screen and (min-width: 768px) {
         @include font (28px, null, 1.18, null);
+        margin-bottom: 30px;
         }
     @media screen and (min-width: 1200px) {
         @include font (36px, 700, 1.16, 0.03em);
+        margin-bottom: 50px;
         }
 }
 

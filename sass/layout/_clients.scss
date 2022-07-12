@@ -1,17 +1,27 @@
 .clients {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }  
+    @include desktop {
+            padding-top: 95px;
+            padding-bottom: 95px;
+        }
 }
 
 .clients-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     color: var(--title-color);
     @include tablet {
         @include font (28px, null, 1.18, null);
+        margin-bottom: 30px;
         }    
-        @include desktop {
+    @include desktop {
         @include font (36px, 700, 1.17, 0.03em);
+        margin-bottom: 50px;
         }
 }
 
@@ -27,14 +37,13 @@
     @include tablet {
         width: calc((100% - 60px) / 3);
         }   
-        @include desktop {
+    @include desktop {
         width: calc((100% - 150px) / 6);
-    
         }
 }
 
 .client__link {
-    width: 210px;
+    width: 100%;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
